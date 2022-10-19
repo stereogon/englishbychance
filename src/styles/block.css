@@ -4,7 +4,7 @@
 }
 
 .content {
-    min-height: 100vh;
+    min-height: 70vh;
     margin-top: 3rem;
     text-align: center;
 }
@@ -17,7 +17,7 @@
 }
 
 .subhero-style {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
     color: #646463;
     text-align: center;
@@ -31,13 +31,24 @@
     border: none;
     font-size: 1.5rem;
     font-weight: normal;
-    margin-top: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    transform: translate(-0.05rem, -0.05rem);
+    box-shadow: rgba(100, 100, 99, 0.7) 2.4px 2.4px 3.2px;
 }
 
 @media screen and (min-width: 900px) {
     .hero-style {
         font-size: 6rem;
+    }
+    .subhero-style {
+        font-size: 2.5rem;
     }
     .content {
         padding: 0rem 10rem;

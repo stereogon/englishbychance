@@ -5,7 +5,7 @@ export default function Block(props) {
         <>
             <div className="container">
                 <div className="content">
-                    <p className="hero-style">When the Rubber</p>
+                    <p className="hero-style">When the Rubber Hits the Road</p>
                     <p className="subhero-style">
                         When something is about to begin, get serious, or put to
                         the test.
