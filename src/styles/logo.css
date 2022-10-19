@@ -1,0 +1,20 @@
+.logo-style {
+    font-size: 1.5rem;
+    font-weight: regular;
+    color: #646363;
+}
+
+.logo-style span {
+    font-style: italic;
+    color: #3fccaa;
+}
+
+.logo-style-footer {
+    font-size: 1.5rem;
+    font-weight: regular;
+    color: #bcbcbc;
+}
+
+.logo-style-footer span {
+    font-style: italic;
+}

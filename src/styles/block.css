@@ -1,0 +1,45 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.content {
+    min-height: 100vh;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.hero-style {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #646463;
+    text-align: center;
+}
+
+.subhero-style {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #646463;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    background-color: #646463;
+    color: white;
+    padding: 0.7rem 2rem;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+    .hero-style {
+        font-size: 6rem;
+    }
+    .content {
+        padding: 0rem 10rem;
+    }
+}

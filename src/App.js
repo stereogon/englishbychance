@@ -1,9 +1,14 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
+import Block from "./components/Block";
+import Footer from "./components/Footer";
 
 function App() {
     return (
         <>
-            <p>Hi</p>
+            <Navbar />
+            <Block />
+            <Footer />
         </>
     );
 }
