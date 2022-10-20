@@ -50,6 +50,15 @@
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 
+@media screen and (min-width: 700px) {
+    .hero-style {
+        font-size: 4rem;
+    }
+    .subhero-style {
+        font-size: 2rem;
+    }
+}
+
 @media screen and (min-width: 900px) {
     .hero-style {
         font-size: 6rem;
