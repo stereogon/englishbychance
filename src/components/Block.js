@@ -9,7 +9,10 @@ export default function Block() {
             "A welcome to someone or something that is particularly enthusiastic and positive.",
     });
 
+    const [spinner, setSpinner] = useState(false);
+
     const nextWord = () => {
+        setSpinner(true);
         fetch(process.env.REACT_APP_API_NINJA_URL, {
             method: "GET",
             headers: {
@@ -32,6 +35,8 @@ export default function Block() {
                         return res.json();
                     })
                     .then((data) => {
+                        setSpinner(false);
+
                         setState({
                             hero: word,
                             phonetic: data[0].phonetic,
@@ -62,6 +67,9 @@ export default function Block() {
                     <button className="btn" onClick={() => nextWord()}>
                         Next
                     </button>
+                    <center>
+                        {spinner && <p className="loading-style">Loading...</p>}
+                    </center>{" "}
                 </div>
             </div>
         </>

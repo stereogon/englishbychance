@@ -50,6 +50,14 @@
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 
+.loading-style {
+    background-color: #bddefc;
+    color: #182430;
+    width: 7rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
 @media screen and (min-width: 700px) {
     .hero-style {
         font-size: 4rem;
