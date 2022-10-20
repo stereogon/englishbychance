@@ -9,8 +9,8 @@ export default function Block() {
             "A welcome to someone or something that is particularly enthusiastic and positive.",
     });
 
-    const nextWord = async () => {
-        const { word } = await fetch(process.env.REACT_APP_API_NINJA_URL, {
+    const nextWord = () => {
+        fetch(process.env.REACT_APP_API_NINJA_URL, {
             method: "GET",
             headers: {
                 "X-Api-Key": process.env.REACT_APP_API_NINJA_KEY,
@@ -21,29 +21,27 @@ export default function Block() {
                 return res.json();
             })
             .then((data) => {
-                return data;
-            })
-            .catch((err) => {
-                return {
-                    word: "error",
-                };
-            });
-
-        fetch(process.env.REACT_APP_API_URL + word, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-            },
-        })
-            .then((res) => {
-                return res.json();
-            })
-            .then((data) => {
-                setState({
-                    hero: word,
-                    phonetic: data[0].phonetic,
-                    subhero: data[0].meanings[0].definitions[0].definition,
-                });
+                let { word } = data;
+                fetch(process.env.REACT_APP_API_URL + word, {
+                    method: "GET",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                })
+                    .then((res) => {
+                        return res.json();
+                    })
+                    .then((data) => {
+                        setState({
+                            hero: word,
+                            phonetic: data[0].phonetic,
+                            subhero:
+                                data[0].meanings[0].definitions[0].definition,
+                        });
+                    })
+                    .catch((err) => {
+                        nextWord();
+                    });
             })
             .catch((err) => {
                 setState({
