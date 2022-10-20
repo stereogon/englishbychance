@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/englishbychance/static/css/main.8bab690f.css",
+    "main.js": "/englishbychance/static/js/main.af9eefba.js",
+    "static/js/787.41cc5097.chunk.js": "/englishbychance/static/js/787.41cc5097.chunk.js",
+    "index.html": "/englishbychance/index.html",
+    "main.8bab690f.css.map": "/englishbychance/static/css/main.8bab690f.css.map",
+    "main.af9eefba.js.map": "/englishbychance/static/js/main.af9eefba.js.map",
+    "787.41cc5097.chunk.js.map": "/englishbychance/static/js/787.41cc5097.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8bab690f.css",
+    "static/js/main.af9eefba.js"
+  ]
+}
