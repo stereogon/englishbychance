@@ -39,14 +39,19 @@ export default function Block() {
                 return res.json();
             })
             .then((data) => {
-                console.log(data);
                 setState({
                     hero: word,
                     phonetic: data[0].phonetic,
                     subhero: data[0].meanings[0].definitions[0].definition,
                 });
             })
-            .catch((err) => {});
+            .catch((err) => {
+                setState({
+                    hero: "error",
+                    phonetic: "/ˈɛrə/",
+                    subhero: "a mistake.",
+                });
+            });
     };
 
     return (
