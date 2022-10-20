@@ -1,3 +1,9 @@
+# English By Chance
+
+Random Idiom, Adjective, Word Generator.
+
+![Instagram post - 1 (3)](https://user-images.githubusercontent.com/64136587/196900996-cdf8ed69-29cf-404f-ba09-3e9b5129547c.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
