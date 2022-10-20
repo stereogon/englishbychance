@@ -1,20 +1,22 @@
 .logo-style {
     font-size: 1.5rem;
-    font-weight: regular;
-    color: #646363;
+    font-weight: bold;
+    color: #379cf9;
 }
 
 .logo-style span {
+    font-weight: normal;
     font-style: italic;
-    color: #3fccaa;
+    color: #bddefc;
 }
 
 .logo-style-footer {
     font-size: 1.5rem;
-    font-weight: regular;
-    color: #bcbcbc;
+    font-weight: bold;
+    color: #3a444e;
 }
 
 .logo-style-footer span {
+    font-weight: normal;
     font-style: italic;
 }

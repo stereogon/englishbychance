@@ -5,13 +5,33 @@
 }
 
 body {
-    font-family: "PT Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #e5fff9;
+    background-color: #182430;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #182430;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #232d36;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #384047;
 }
