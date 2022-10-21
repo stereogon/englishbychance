@@ -9,6 +9,13 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #182430;
+    /* Created with https://www.css-gradient.com */
+    background-image: radial-gradient(
+        circle at bottom,
+        #1c558b 0%,
+        #113151 30%,
+        #182430 100%
+    );
 }
 
 code {
